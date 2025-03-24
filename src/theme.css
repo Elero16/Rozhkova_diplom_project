@@ -1,0 +1,28 @@
+/* Светлая тема */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #0d6efd;
+}
+
+/* Темная тема */
+[data-theme='dark'] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
